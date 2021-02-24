@@ -1,11 +1,9 @@
-package com.xq.logger.service;
+package com.xq.logest.service;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.conditions.segments.MergeSegments;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.xq.logger.bean.LoggerDTO;
-import com.xq.logger.mapper.LoggerDao;
+import com.xq.logest.bean.LoggerDTO;
+import com.xq.logest.mapper.LoggerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

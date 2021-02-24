@@ -1,9 +1,9 @@
-package com.xq.logger.annotation;
+package com.xq.logest.annotation;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.xq.logger.bean.LoggerDTO;
-import com.xq.logger.service.LogService;
-import com.xq.logger.util.JsonUtil;
+import com.xq.logest.bean.LoggerDTO;
+import com.xq.logest.service.LogService;
+import com.xq.logest.util.JsonUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -32,7 +32,7 @@ public class LoggerMethodHandle {
     /**
      * 切入点
      */
-    @Pointcut("@annotation(com.xq.logger.annotation.Logger)")
+    @Pointcut("@annotation(com.xq.logest.annotation.Logger)")
     private void pointcut() {
 
     }
@@ -137,7 +137,7 @@ public class LoggerMethodHandle {
 
         loggerDTO.setTime(LocalDateTime.now().format(DateTimeFormatter.BASIC_ISO_DATE));
 
-        // System.out.println(loggerDTO);
+        System.out.println(loggerDTO);
         logService.save(loggerDTO);
 
     }

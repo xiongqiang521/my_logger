@@ -1,4 +1,4 @@
-package com.xq.logger.util;
+package com.xq.logest.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;

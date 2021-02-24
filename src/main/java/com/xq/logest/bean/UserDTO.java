@@ -1,10 +1,6 @@
-package com.xq.logger.bean;
-
-import com.xq.logger.annotation.Logger;
-import org.springframework.stereotype.Component;
+package com.xq.logest.bean;
 
 import java.io.Serializable;
-import java.util.Arrays;
 
 /**
  * user
@@ -15,7 +11,7 @@ public class UserDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id;
     private String username;
-    private char[] password;
+    private String password;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -26,7 +22,7 @@ public class UserDTO implements Serializable {
         return "UserDTO{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
-                ", password=" + Arrays.toString(password) +
+                ", password='" + password + '\'' +
                 '}';
     }
 
@@ -46,11 +42,11 @@ public class UserDTO implements Serializable {
         this.username = username;
     }
 
-    public char[] getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(char[] password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }

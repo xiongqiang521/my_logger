@@ -1,4 +1,4 @@
-package com.xq.logger.annotation;
+package com.xq.logest.annotation;
 
 import java.lang.annotation.*;
 

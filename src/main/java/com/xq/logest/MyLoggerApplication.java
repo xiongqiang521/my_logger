@@ -1,9 +1,10 @@
-package com.xq.logger;
+package com.xq.logest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class MyLoggerApplication {
 
     public static void main(String[] args) throws Exception{
